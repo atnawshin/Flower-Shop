@@ -14,9 +14,13 @@ body {
     background: #E55473;
     border: 0;
     color: #FFF;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     padding: 15px 35px;
+}
+
+.pic-width {
+    width: 300px;
 }
 
 /* Header related style */
@@ -59,7 +63,6 @@ body {
 .main-section1 {
     max-width: 1140px;
     margin: 0 auto;
-    /* justify-content: center; */
 }
 
 .main-section2 {
@@ -67,13 +70,32 @@ body {
 }
 
 .featured-flowers {
+    display: flex;
+    justify-content: baseline;
+    align-items: center;
     padding: 30px;
     border-radius: 10px;
     margin: 0px 230px;
 }
 
+.flower-bg {
+    border-radius: 300px 300px 0px 0px;
+}
+
+#flower1-bg-color {
+    background-color: #A7216226;
+}
+
+#flower2-bg-color {
+    background-color: #0597A026;
+}
+
+#flower3-bg-color {
+    background-color: #477D1126;
+}
+
 .featured-flowers-text {
-    margin: 100px 80px;
+    margin: 60px 80px;
 }
 
 .types-of-flowers-container {
@@ -81,6 +103,15 @@ body {
     justify-content: space-around;
     align-items: baseline;
     margin: 0px 240px;
+    padding: 10px;
+    gap: 26px;
+}
+
+.types-of-flowers {
+    text-align: center;
+    padding: 26px;
+    width: 342px;
+    height: 396px;
 }
 
 .section-title {
@@ -91,65 +122,90 @@ body {
 }
 
 .section-description {
-    width: 594px;
     text-align: center;
     font-size: 18px;
     font-weight: 400;
     line-height: 30px;
 }
 
-.types-of-flowers {
-    text-align: center;
-    padding: 26px;
-    width: 342px;
-    height: 396px;
+.instagram-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+}
+
+.instagram-flowers {
+    float: left;
+    width: 33.33%;
+    padding: 5px;
 }
 
 .hot-deal-container {
-    display: flex;
     background-color: #E554730D;
-    justify-content: space-around;
-    /* max-width: 1140px; */
-    margin: 0 auto;
-    margin-top: 40px;
+    padding: 30px 30px 0px 150px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-items: center;
 }
-.hot-deal-items{
-    margin: 40px 30px;
+
+#hot-deal-items1 {
+    max-width: 500px;
+    margin: 60px 50px 30px 20px;
+}
+
+#hot-deal-items2 {
+    margin: 60px 150px 30px 20px;
     justify-content: center;
+    padding-right: 100px;
+    padding-left: 200px;
 }
-/* .hot-deal{
-    margin: 130px;
-} */
+
+.hot-deal-btn {
+    text-align: center;
+    margin-top: 30px;
+}
+
 input {
     display: inline-block;
     margin-bottom: 20px;
+    margin-left: 100px;
     border-radius: 8px;
     background: #FFF;
-    padding: 10px 30px;
-    color: #FFFFFF;
+    padding: 5px 10px;
+    color: black;
     border: 0;
     width: 50%;
     height: 34px;
 }
 
-.latest-deals {
+.text-alignment {
+    text-align: center;
+    padding: 5px;
+}
+
+.latest-deals-container {
     background-image: url("../images/Rectangle\ 9.png");
-    /* width: 1440px; */
     height: 100%;
     background-position: center;
-    padding: 10%;
+    padding: 5%;
     background-repeat: no-repeat;
     background-size: contain;
 }
 
-.latest-deals>form {
-    padding-left: 20%;
+.special {
+    margin-top: 40px;
+}
+
+.form {
+    margin-left: 100px;
 }
 
 .bonus {
     display: flex;
-    /* padding: 10%; */
-    margin: 130px;
+    justify-content: space-around;
+    align-items: center;
     margin: 0 auto;
     max-width: 1140px;
     background-image: url("../images/bg2.jpg");
@@ -176,10 +232,11 @@ input {
     background: cadetblue;
     border: 0;
     color: black;
-    font-size: 15px;
-    font-weight: 600;
-    padding: 10px 25px;
-    justify-content: right;
+    padding: 10px 15px;
+}
+
+.bonus-btn-alignment {
+    text-align: center;
 }
 
 footer {
@@ -187,7 +244,6 @@ footer {
     background: #111010;
     padding: 130px 200px;
     margin-top: 100px;
-    /* background-color: #111010; */
 }
 
 #pink-word {
@@ -215,13 +271,12 @@ small {
 
 .extra-part-container {
     display: flex;
-    /* justify-content: space-evenly; */
-    /* align-items: center; */
+    justify-content: space-evenly;
+    align-items: center;
     gap: 24px;
     background-color: #2727270D;
-    /* margin-top: 50px; */
-    padding: 50px 100px;
-    padding-left: 25%;
+    padding: 100px 200px;
+    margin: 100px 120px;
 }
 
 .extra-part-container>img {
